@@ -60,7 +60,7 @@ public class FabricanteController {
 	}
 	
 	@DeleteMapping("/fabricantes/{codigo}")
-	public void eliminarCliente(@PathVariable(name="codigo")int codigo) {
+	public void eliminarFabricante(@PathVariable(name="codigo")int codigo) {
 		fabricanteServiceImpl.eliminarFabricante(codigo);
 	}
 

@@ -13,8 +13,8 @@ CREATE TABLE IF NOT EXISTS articulos (
 						precio INT DEFAULT NULL,
 						fabricante INT DEFAULT NULL,
 						PRIMARY KEY(codigo),
-						FOREIGN KEY (fabricante) REFERENCES fabricantes (codigo)
-						ON DELETE CASCADE ON UPDATE CASCADE
+						CONSTRAINT articulos_fk FOREIGN KEY (fabricante) REFERENCES fabricantes (codigo)
+                        ON DELETE CASCADE ON UPDATE CASCADE
 						);
                         
 
